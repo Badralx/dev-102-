@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+     
+}
+
+.body{
+    background-color: rgb(19, 36, 27);
+
+}
+
+.contact_container{
+    color: #fff;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    height: 70vh;
+}
+
+section {
+    padding-top: 10vh;
+   
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color:rgb(13, 24, 18) ;
+    width: 100%;
+    height: 70px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 0 50px;
+    /* position: fixed; */
+    z-index: 999;
+}
+
+.header-container{
+    width: 92%;
+    margin: 0px auto;
+
+}
+
+
+
+header nav ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+
+header nav ul li a {
+    display: inline-block;
+    color: #fcfcfc;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover, header nav ul li a.active {
+    border-bottom-color: rgb(255, 255, 255);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #ffffff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        padding: 30px;
+        transition: 0.3s;
+        z-index: 999;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.315);
+        backdrop-filter: blur(10px);
+        box-shadow: -3px 0px 10px rgb(51, 51, 51);
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+        color: #000000;
+        
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+.BigContainner{
+    background-color: rgb(255, 255, 255);
+    
+    height: 700px;
+    
+}
+
+
+
+
+
+
+
+.FormContainer{
+    height: 100%;
+}
+
+.formDiv{
+    margin-top: 10%;
+    height: 80%;
+    width: 100%;
+    padding-left: 60px;
+    border-radius: 6px;
+}
+
+.formDiv h1{
+    /* color: rgb(141, 159, 199); */
+    color: #1e9453;
+}
+
+
+.formDiv p{
+    margin-bottom: 70px;
+    color: rgb(200, 205, 206);
+}
+
+.formDiv input {
+    width: 90%;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.formDiv textarea {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 12px 20px;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+.formDiv button{
+    width: 35%;
+    height: 45px;
+    border-radius: 10em;
+    border: none;
+    background-color: #105e34;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.formDiv button:hover {
+    color: #105e34;
+    background-color: white;
+    border: 1px solid #105e34 ;
+    transition: 0.5s;
+    
+}
+
+.formDiv button:not(:hover) {
+    transition: 0.5s;
+    background-color: #105e34;
+    color: #fff;
+}
+
+
+.infosContainner{
+    /* width: 500px; */
+    height: 106%;
+    background-color: #105e34;
+    position: relative;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    
+   
+}
+
+.infosContainner div {
+    height: 60%;
+    width: 100%;
+
+}
+
+.infosContainner div h1 {
+    padding-bottom: 60px;
+    
+    text-align: center;
+}
+
+.infosDiv {
+    
+    padding-left: 20px;
+
+}
+
+.infosDiv {
+    text-align: center;
+}
+
+.socialDiv {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.socialDiv p {
+    text-align: center;
+}
+
+
+
+img [src="./Icones/DMAAA.png"]:hover{
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 75px;
+    background-color:rgb(10, 19, 14) ;
+    color: #ffffff;
+    position: fixed;
+  }
+footer ul {
+    width: 60%;
+    margin: 30px auto;
+    padding-top: 40px;
+    list-style: none;
+    
+}
+
+footer a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.DVAcademyFooter {
+    text-decoration: underline !important;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .FormContainer{
+        width: 80%;
+        
+    }
+
+    .formDiv{
+        padding-left: 30px;
+    }
+
+    .infosContainner{
+        width: 100%;
+        height: 70%;
+    }
+
+    .socialDiv{
+        padding-top: 80px;
+    }
+
+    .infosContainner .infosContainner2 {
+        margin-top: -50px;
+    }
+
+
+
+}

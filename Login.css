@@ -1,0 +1,353 @@
+:root {
+    /* --main-color: hwb(160 22% 34%); */
+    --main-color: #ea344c
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+body {
+    
+    
+    background-color: rgb(19, 36, 27) !important
+
+}
+
+
+
+
+header {
+    background-color:rgb(13, 24, 18) ;
+    width: 100%;
+    height: 70px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 0 50px;
+    /* position: fixed; */
+    z-index: 999;
+    margin-bottom: 20vh;
+}
+
+.header-container{
+    width: 92%;
+    margin: 0px auto;
+
+}
+
+
+
+header nav ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #fcfcfc;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover, header nav ul li a.active {
+    border-bottom-color: rgb(255, 255, 255);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #ffffff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        padding: 30px;
+        transition: 0.3s;
+        z-index: 999;
+
+        background-color: rgba(255, 255, 255, 0.315);
+        backdrop-filter: blur(10px);
+        box-shadow: -3px 0px 10px gray;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+        color: #ffffff;
+        
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.big_container {
+    margin: 110px auto;
+    background-color: #105e34;
+    height: 80vh;
+    /* display: flex; */
+    /* box-shadow: 1px 1px 12px rgb(231, 231, 231); */
+    border-radius: 250px;
+    
+}
+
+
+.LeftSide {
+    
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.LeftSide p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.LeftSide button {
+    height: 45px;
+    width: 180px;
+    color: #105e34 !important;
+    border-radius: 25px;
+    border: 1px solid #105e34 !important;
+    background-color: white !important;
+}
+
+
+.content_left {
+    width:  75%;
+}
+
+
+
+.RightSide {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+}
+
+
+
+.RightSide h1 {
+    color: #1e9453;
+    text-align: center;
+}
+
+.RightSide p {
+    text-align: center;
+    margin-bottom: 18px;
+    color: rgb(220, 225, 226);
+    font-size: 13px;
+}
+
+.Bubbles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.SclBubble {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: 1px solid rgb(155, 153, 153);
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+
+.SclBubble1 {
+    background-image: url(Icones/facebook-login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 19px;
+}
+
+.SclBubble2 {
+    background-image: url(Icones/google-plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 25px;
+}
+
+.SclBubble3 {
+    background-image: url(Icones/linkedin-login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 18px;
+}
+
+
+.SclBubble:hover {
+    cursor: pointer;
+    background-color: #ebecee;
+    transition: 0.5s;
+}
+
+.SclBubble:not(:hover) {
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+
+
+
+input {
+    width: 280px;
+    height: 40px;
+    margin-bottom: 10px !important;
+    background-color: rgb(245, 245, 247);
+    border: none;
+    border-radius: 4px;
+    padding-left: 18px;
+    font-size: 14px;
+
+}
+
+
+
+.RightSide button {
+    height: 45px;
+    width: 180px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    background-color:  #105e34 !important;
+    margin-top: 16px;
+    margin-left: 50px;
+    border: none;
+    
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.LeftSide button:hover {
+    transform: scale(1.04);
+    background-color: #105e34 !important;
+    color: white !important;
+    border: 1px solid #ffffff !important;
+    transition: 0.5s;
+}
+
+.LeftSide button:not(:hover) {
+    transform: scale(1.04);
+    color: white;
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+
+.RightSide button:hover {
+    transform: scale(1.04);
+    background-color: white !important;
+    border:1px solid #105e34 !important;
+    color:  #105e34 !important;
+    transition: 0.5s;
+}
+
+.RightSide button:not(:hover) {
+    transform: scale(1.04);
+    color: white;
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+
+@media screen and (max-width : 768px ) {
+    .LeftSide {
+        padding: 50px;
+    
+        
+    }
+
+    .RightSide{
+        height: 400px;
+    }
+}
+
+
+
+footer {
+    /* background-color: rgb(29, 46, 36)  !important; */
+    margin-top: 130px;
+    background-color:rgb(10, 19, 14) ;
+    color: #ffffff;
+  }
+footer ul {
+    width: 60%;
+    margin: 30px auto;
+    padding-top: 40px;
+    list-style: none;
+    
+}
+
+footer a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.DVAcademyFooter {
+    text-decoration: underline !important;
+}

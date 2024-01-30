@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    list-style-type: none;
+     
+}
+
+
+
+body{
+    background-color: rgb(19, 36, 27) !important;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+.green-text{
+    color: #1e9453;
+}
+
+.text-blue{
+    color: rgb(141, 159, 199);
+}
+
+.containner{
+    margin: 0px auto;
+}
+
+
+header {
+    background-color:rgb(13, 24, 18) ;
+    width: 100%;
+    height: 70px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 0 50px;
+    /* position: fixed; */
+    z-index: 999;
+}
+
+.header-container{
+    width: 92%;
+    margin: 0px auto;
+
+}
+
+
+
+header nav ul {
+    display: flex;
+    padding-top: 10px;
+}
+
+
+header nav ul li a {
+    display: inline-block;
+    color: #fcfcfc;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover, header nav ul li a.active {
+    border-bottom-color: rgb(255, 255, 255);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #ffffff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+        z-index: 1000;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        /* background: #ffffff; */
+        padding: 30px;
+        transition: 0.3s;
+        z-index: 999;
+
+        background-color: rgba(255, 255, 255, 0.315);
+        backdrop-filter: blur(10px);
+        box-shadow: -3px 0px 10px gray;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+        color: #ffffff;
+        
+    }
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+.section1 {
+    width: 100%;
+    
+    color: white;
+    opacity: 0.94;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.LeftSection1 {
+    width: 60%;
+    color: white;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+
+
+.LeftSection1 p {
+    font-size: 20px ;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 66px;
+}
+
+.GreenTxt {
+    color: #1e9453;
+    font-weight: 500;
+}
+
+
+
+.RightSection1 {
+    /* width: 36%; */
+    /* background-color: black; */
+    color: whitesmoke;
+    /* background-color: antiquewhite; */
+    padding: 38px 30px;
+}
+
+
+
+
+
+
+.UnderSpotifyBox {
+   
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 31px;
+    
+    
+}
+
+.UnderSpotifyBox p {
+    color: rgba(255, 255, 255, 0.767) !important;
+}
+.UnderSpotifyBox span {
+    text-align: center;
+    padding-left: 27px;
+    
+}
+
+
+
+
+
+
+.Section2 {
+    /* height: 880px; */
+    width: 100%;
+    background-color:  rgb(26, 49, 37);
+    padding-top:70px;
+    color: white;
+}
+
+.Section2 h1 {
+    text-align: center;  
+}
+
+.PSection2 {
+    /* width: 56%; */
+    margin: 0px auto;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: white !important;
+}
+
+.CardContainer{
+    /* display: flex;
+    justify-content: space-between; */
+    /* width: 85%; */
+    /* margin: 50px auto; */
+}
+.card {
+    /* width: 32%; */
+    /* height: 374px; */
+    color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1px 30px rgb(207, 206, 206);  */
+    line-height: 34px;
+    background-color: rgb(19, 36, 27);
+    
+    vertical-align: middle;
+    
+}
+.H2Card {
+    font-weight: 500;
+    font-size: 25px;
+    
+    text-align: center;
+    color: #1e9453;
+
+
+}
+
+
+
+
+.ImgCard {
+    margin: 20px auto;
+}
+
+
+.PCard {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255) ;
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ACard {
+    text-decoration: none;
+    color: rgb(0, 42, 104);
+    font-weight: 600;
+}
+
+
+
+
+
+.containnerDivSct3{
+    margin: 2% auto;
+}
+
+
+.ImgSection3 {
+    background-image: url(./Image/developper2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px; ;
+    border-radius: 5px;
+    background-color: #2a6438;
+
+}
+
+
+
+.TextSection3 h3 {
+    font-size: 34px;
+    font-weight: 800;
+}
+.TextSection3 p {
+    line-height: 34px;
+    /* background-color: rgb(26, 49, 37) ; */
+    padding: 30px;
+    border-radius: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    /* height: 250px; */
+    /* overflow: scroll; */
+    overflow-x: hidden;
+
+}
+
+.TextSection3 button {
+    width: 190px;
+    height: 47px;
+    color: white;
+    background-color: rgb(54, 54, 119);
+    border: none;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.TextSection3 button:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(54, 54, 119);
+    background-color: rgb(161, 158, 158);
+}
+
+
+
+
+
+
+
+
+footer {
+    /* background-color: rgb(29, 46, 36)  !important; */
+    margin-top: 75px;
+    background-color:rgb(10, 19, 14) ;
+    color: #ffffff;
+  }
+footer ul {
+    width: 60%;
+    margin: 30px auto;
+    padding-top: 40px;
+    list-style: none;
+    
+}
+
+footer a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.DVAcademyFooter {
+    text-decoration: underline !important;
+}
+
+
